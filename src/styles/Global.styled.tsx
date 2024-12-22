@@ -35,8 +35,11 @@ list-style: none;
 button{
   background-color: unset;
   border: unset;
+  border-radius: 8px;
   cursor: pointer;
-  color: ${theme.colors.colorText}
+  color: ${theme.colors.colorText};
+  font-size: 16px;
+  text-align: center;
 }
 
 section {
