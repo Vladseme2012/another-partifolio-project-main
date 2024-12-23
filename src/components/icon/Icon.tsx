@@ -1,5 +1,5 @@
 import React from 'react';
-import iconsSprite from '../assets/images/icons-sprite.svg';
+import iconSprite from '../../assets/images/icons-sprite.svg'
 import { theme } from '../../styles/Theme';
 
 type IconSpriteType = {
@@ -18,7 +18,7 @@ export const Icon: React.FC<IconSpriteType> = (props) => {
             fill={props.fill || `${theme.colors.colorText}`}
             xmlns="http://www.w3.org/2000/svg"
         >
-            <use xlinkHref={`${iconsSprite}#${props.iconId}`}></use>
+            <use xlinkHref={`${iconSprite}#${props.iconId}`}></use>
         </svg>
     );
 };
