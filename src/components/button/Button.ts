@@ -5,14 +5,20 @@ type ButtonPropsType = {
     widthBtn?: string;
     heightBtn?: string;
     paddingBtn?: string;
-    typeBtn: 'primary' | 'outlined';
+    typeBtn?: 'primary' | 'outlined';
 };
 
 export const Button = styled.button<ButtonPropsType>`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     width: ${(props) => props.widthBtn || '174px'};
     height: ${(props) => props.heightBtn || '50px'};
-    padding: ${(props) => props.paddingBtn || '15px 66px'};
+    padding: ${(props) => props.paddingBtn || '12px 22px'};
     border: 2px solid ${theme.colors.primary};
+    font-size: 16px;
+    line-height: 1.5;
 
     ${(props) =>
         props.typeBtn === 'primary' &&
