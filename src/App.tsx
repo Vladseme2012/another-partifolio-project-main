@@ -1,5 +1,5 @@
 import './App.css';
 
-function App() {
+export function App() {
     return <div className="App"></div>;
 }
